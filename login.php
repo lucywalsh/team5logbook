@@ -26,7 +26,15 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 	Your email address is: <?php $email; ?><br>
 
 <?php
-	$sql = "INSERT INTO userLogin (name, email) VALUES $name, $email";
+	$sql = "INSERT INTO userLogin (name, email) VALUES ($name, $email)";
+
+	if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 	?>
 
 </body>
