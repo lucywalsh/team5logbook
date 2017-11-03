@@ -3,9 +3,12 @@
 	Welcome <?php echo $_GET["name"];?><br>
 	Your email address is: <?php echo $_GET["email"]; ?><br>
 
+	<?php echo "hello";?>
+
 <!--PHP-->
 <?php
-
+	
+	echo "hello";
 
     //declare the SQL statement that will query the database
     $query = "INSERT INTO userLogin (name, email) VALUES ('Jess','Jess@gmail.com')";
@@ -19,7 +22,7 @@
     echo $query;
     echo $result;
     echo $result2;
-    echo "hello";
+    
 
 ?>
 
