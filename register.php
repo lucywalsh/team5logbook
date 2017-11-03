@@ -1,7 +1,8 @@
 <html>
 <body>
 	Welcome <?php echo $_GET["name"];?><br>
-	Your email address is: <?php echo $_GET["email"]; ?><br>
+	Your email address is: <?php echo $_GET["email"]; 
+	echo "hello";?><br>
 
 </body>
 </html>
@@ -36,7 +37,6 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
     echo $query;
     echo $result;
     echo $result2;
-    echo "hello";
 
 ?>
 
