@@ -36,6 +36,7 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
     echo $query;
     echo $result;
     echo $result2;
+    echo "hello";
 
 ?>
 
