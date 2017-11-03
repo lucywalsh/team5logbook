@@ -6,13 +6,7 @@
 <!--PHP-->
 <?php
 
-    //declare the SQL statement that will query the database
-    $query = "INSERT INTO userLogin (name, email) VALUES ('Jess','Jess@gmail.com')";
 
-    //execute the SQL query and return records
-    $result = mssql_query($query);
-
-    echo "hello";
 
     $result2 = mssql_query("SELECT * FROM userLogin");
 
