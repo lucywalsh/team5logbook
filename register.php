@@ -4,9 +4,6 @@
 	Your email address is: <?php echo $_GET["email"]; 
 	echo "hello";?><br>
 
-</body>
-</html>
-
 <!--PHP-->
 <?php
     // PHP Data Objects(PDO) Sample Code:
@@ -39,4 +36,5 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
     echo $result2;
 
 ?>
-
+</body>
+</html>
