@@ -22,7 +22,7 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 	Your email address is: <?php echo $_GET["email"]; ?><br>
 
 	<?php
-		$query = "INSERT INTO userLogin (id,name) VALUES  ('Jess','Jess@gmail.com')";
+		$query = "INSERT INTO userLogin (name, email) VALUES  ('Jess','Jess@gmail.com')";
 		$result = mssql_query($query,$dbc)
 	?>
 
