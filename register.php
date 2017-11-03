@@ -28,10 +28,10 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
     $query = "INSERT INTO userLogin (name, email) VALUES ('Jess','Jess@gmail.com')";
 
     //execute the SQL query and return records
-    $result = mssql_query($SQL) 
+    $result = mssql_query($query)
     or die('A error occured: ' . mysql_error());
 
-    $result2 = mssql_query("SELECT * FROM userLogin")
+    $result2 = mssql_query("SELECT * FROM userLogin");
 
 ?>
 
