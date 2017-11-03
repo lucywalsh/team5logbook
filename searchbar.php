@@ -1,8 +1,5 @@
 <html>
 <body>
-<?php 
-	$search = echo $_GET["search"];
-	?>
-You searched for: <?php $search ?>
+You searched for: <?php echo $_GET["search"]; ?>
 </body>
 </html>
