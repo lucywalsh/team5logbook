@@ -33,5 +33,9 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 
     $result2 = mssql_query("SELECT * FROM userLogin");
 
+    echo $query;
+    echo $result;
+    echo $result2;
+
 ?>
 
