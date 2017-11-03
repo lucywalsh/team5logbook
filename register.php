@@ -7,6 +7,7 @@
 <?php
 	
 	echo "hello";
+	echo "goodbye";
 
     //declare the SQL statement that will query the database
     $query = "INSERT INTO userLogin (name, email) VALUES ('Jess','Jess@gmail.com')";
