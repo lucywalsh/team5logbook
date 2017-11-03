@@ -10,8 +10,7 @@
     $query = "INSERT INTO userLogin (name, email) VALUES ('Jess','Jess@gmail.com')";
 
     //execute the SQL query and return records
-    $result = mssql_query($query)
-    or die('A error occured: ' . mysql_error());
+    $result = mssql_query($query);
 
     echo "hello";
 
