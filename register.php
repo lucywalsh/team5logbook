@@ -18,12 +18,8 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 <html>
 <body>
-<?php
-	$name = echo $_GET["name"];
-	$email = echo $_GET["email"];
-?>
-	Welcome <?php $name;?><br>
-	Your email address is: <?php $email; ?><br>
+	Welcome <?php echo $_GET["name"];?><br>
+	Your email address is: <?php echo $_GET["email"]; ?><br>
 
 	<?php
 	$sql = "INSERT INTO userLogin (name, email) VALUES (echo $_GET['name'], echo $_GET['email'])";
